@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Java Program with Files",
+        "type": "shell",
+        "command": "cmd.exe",
+        "args": [
+          "/C",
+          "java ${relativeFile} < input.txt > output.txt"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+  
