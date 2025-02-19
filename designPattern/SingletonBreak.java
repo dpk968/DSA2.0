@@ -1,7 +1,6 @@
-package com.dpk;
+package designPattern;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 public class SingletonBreak {
 

@@ -1,5 +1,4 @@
-package com.dpk;
-
+package designPattern;
 import java.io.Serializable;
 
 public class Singalton implements Serializable{
@@ -10,7 +9,7 @@ public class Singalton implements Serializable{
 	
 	public Singalton() throws Exception {
 		if(flag) {
-			throw new Exception("already obj exsisit");
+			// throw new Exception("already obj exsisit");
 		}
 //		super();
 		System.out.println("constructor called");

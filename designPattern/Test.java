@@ -1,15 +1,18 @@
-package com.dpk;
+package designPattern;
 
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 
 		for(int i=0;i<100;i++) {
 			new Thread(()->{
-				for(int j=0;j<1000;j++) {
-					Singalton singaltont1 = Singalton.getInstance();
+					try {
+						Singalton singaltont1 = Singalton.getInstance();
+						System.out.println(singaltont1.hashCode());
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
 //					System.out.print(j+" ");
-				}
 			}).start();
 		}
 		

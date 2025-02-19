@@ -1,4 +1,4 @@
-package com.dpk;
+package designPattern;
 
 public class SIngletonBreakUsingCloanable {
 
