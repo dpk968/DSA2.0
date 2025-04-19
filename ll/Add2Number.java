@@ -12,7 +12,6 @@ public class Add2Number {
         ArrayToLinkedList.printLl(b);
 
         Node head = add2Number(a, b);
-
         ArrayToLinkedList.printLl(head);
     }
 
