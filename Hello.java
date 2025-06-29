@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Hello {
+public sealed class Hello permits Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
@@ -11,5 +11,9 @@ public class Hello {
         
         sc.close();
     }
+
+}
+
+non-sealed class Main extends Hello{
 
 }
