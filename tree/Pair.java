@@ -2,8 +2,8 @@ package tree;
 
 public class Pair<F,S> {
 	
-	F first;
-	S second;
+	public F first;
+	public S second;
 	
 	public Pair() {
 		super();

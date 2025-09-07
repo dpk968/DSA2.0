@@ -5,7 +5,7 @@ public class SortLinkedList {
         int[] arr = {3, 5, 2, 1, 4};
         Node head = ArrayToLinkedList.arr2ll(arr);
         ArrayToLinkedList.printLl(head);
-        head = sortLinkedList(head);
+        // head = sortLinkedList(head);
         ArrayToLinkedList.printLl(head);
     }
 }
