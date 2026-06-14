@@ -1,34 +1,15 @@
+import java.util.concurrent.CompletableFuture;
+import java.util.Scanner;
 
 public class Hello{
 
     public static void main(String[] args) {
-      
-        System.out.println("hello");
+      Scanner sc = new Scanner(System.in);
 
-        C c = new C();
-        c.fun();
-        c.run();
-        c.sun();
-
-      
-}
-
-}
-
-class A{
-    public void run(){
-        System.out.println("A run");
+        System.out.println("Enter your name: ");
+        String name = sc.nextLine();
+        System.out.println("Hello, " + name + "!");
+        sc.close();
     }
 }
 
-class B extends A{
-    public void fun(){
-        System.out.println("b fun");
-    }
-}
-
-class C extends B{
-    public void sun(){
-        System.out.println("c sun");
-    }
-}
