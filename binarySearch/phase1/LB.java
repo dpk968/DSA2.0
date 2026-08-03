@@ -16,6 +16,15 @@ public class LB {
         sc.close();
     }
 
+    public static int getUB(int[] arr, int n, int x){
+        int ans = n;
+
+        int l=0,h=n-1;
+
+
+        return n;
+    }
+
     public static int getLB(int[] arr, int n, int x) {
         int ans = n;
 

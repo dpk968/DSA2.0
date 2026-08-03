@@ -2,18 +2,20 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Java Program with Files",
+      "label": "Compile & Run Java",
       "type": "shell",
-      "command": "cmd.exe",
+      "command": "zsh",
       "args": [
-        "/C",
-        "java ${relativeFile} < input.txt > output.txt"
+        "-c",
+        "javac ${file} && java ${fileBasenameNoExtension} < input.txt > output.txt"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$javac"
+      ]
     }
   ]
 }

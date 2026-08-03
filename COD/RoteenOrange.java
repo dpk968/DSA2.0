@@ -4,7 +4,6 @@ import java.util.Queue;
 import java.util.Scanner;
 
 
-
 public class RoteenOrange {
     static class Pair<T,K>{
         T first;
