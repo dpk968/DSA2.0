@@ -3,11 +3,11 @@ class Solution {
         int start = Integer.MAX_VALUE;
         int end = Integer.MIN_VALUE;
 
-        List<Integer> old = new ArrayList<>();
+        Set<Integer> old = new HashSet<>();
 
         for(int i=0;i<nums.length;i++){
-            start = nums[i]<start?nums[i]:start;
-            end = nums[i]>end?nums[i]:end;
+            start = Math.min(nums[i],start);
+            end = Math.max(nums[i],end);
             old.add(nums[i]);
         }
         List<Integer> arr = new ArrayList<>();
