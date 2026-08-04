@@ -12,7 +12,7 @@ class Solution {
         }
         List<Integer> arr = new ArrayList<>();
 
-        for(int i=start;i<end;i++){
+        for(int i=start+1;i<end;i++){
             if(!old.contains(i)){
                 arr.add(i);
             }
