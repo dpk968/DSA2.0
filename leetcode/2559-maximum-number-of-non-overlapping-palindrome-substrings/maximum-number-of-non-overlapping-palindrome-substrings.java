@@ -24,18 +24,19 @@ class Solution {
         if(i>=len || j >= len) return 0;
 
         if(dp[i][j]!=-1) return dp[i][j];
+        int takeIt = Integer.MIN_VALUE;
         if(isPlindrome(s,i,j)){
-            int takeIt = 1+ solve(s,k,j+1,j+k,dp);
-            int notTake = solve(s,k,i+1,j+1,dp);
-            int shift = solve(s,k,i,j+1,dp);
+            takeIt = 1+ solve(s,k,j+1,j+k,dp);
+            // int notTake = solve(s,k,i+1,j+1,dp);
+            // int shift = solve(s,k,i,j+1,dp);
 
-            return dp[i][j] = Math.max(takeIt, Math.max(notTake, shift));
+            // return dp[i][j] = Math.max(takeIt, Math.max(notTake, shift));
         }
 
         int notTake = solve(s,k,i+1,j+1,dp);
         int shift = solve(s,k,i,j+1,dp);
 
-        return dp[i][j] = Math.max(notTake, shift);
+        return dp[i][j] = Math.max(takeIt, Math.max(notTake, shift));
 
     }
 }
